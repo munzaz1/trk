@@ -164,7 +164,7 @@ $translations_en = array(
   'PAGE_ACTIVITY_WEATHER_HAS_BEEN_SET'          => 'Weather has been set',
   'PAGE_ACTIVITY_LOCATION_HAS_BEEN_SET'         => 'Location has been set',
   'PAGE_ACTIVITY_FETCH_STRAVA_PHOTOS'           => 'Fetch photos from Strava',
-  'PAGE_ACTIVITY_PHOTOS_HAVE_BEEN_FETCHED'      => 'Photos has been fetched',
+  'PAGE_ACTIVITY_PHOTOS_HAVE_BEEN_FETCHED'      => 'Photos have been fetched',
   'PAGE_ACTIVITY_REALY_REMOVE_PHOTO'            => 'Really remove photo?',
 
   'PAGE_ADD_ACTIVITY_TITLE'                     => 'Add activity',
