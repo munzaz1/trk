@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family:'open_sansregular',arial,sans-serif;
+  font-size: 1.0em;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+a {color:#202020;text-decoration:underline;}
+a.active {font-weight:bold;}
+a:hover {color:#505050;text-decoration:underline;}
+
+p {text-align:left;margin:0 0 1.0em 0;padding:0;word-wrap:break-word;}
+
+h1 {font-size:2.0em;font-weight:bold;color:#4A4949;margin:0.5em 0 0.5em 0;}
+h2 {font-size:1.5em;font-weight:bold;color:#4A4949;margin:0em 0 0.5em 0;}
+h3 {font-size:1.0em;font-weight:bold;color:#000000;margin:0 0 0.2em 0;padding:0.2em;}
+h4 {font-size:0.8em;font-weight:bold;color:#4A4949;margin:0;}
+
+td, th {font-size:1.0em;padding:0.2em 0.5em 0.2em 0.5em;}
+th {font-weight:normal;text-align:center;}
+
+form {margin:0;padding:0;}
+input[type="text"], input[type="password"], select {height:2.0em;border-radius:0.3em;padding:0 0.5em 0 0.5em;border:2px solid #CFCFCF;font-size:1em;}
+input[type="file"] {height:2.0em;padding:0 0.5em 0 0.5em;}
+textarea {border-radius:0.3em;border:2px solid #CFCFCF;font-size:1em;font-family:'open_sansregular',Arial,sans-serif;}
+input[type="checkbox"] {height:2.0em;width:2.0em;border-radius:0.3em;border:2px solid #CFCFCF;}
+input[type="submit"], button {height:2.0em;border-radius:0.3em;padding:0 0.5em 0 0.5em;border:2px solid #CFCFCF;font-size:1em;background-color:#CFCFCF;}
+input.error {border:2px solid #FF5555;}
+input.required {}
+.inputLabel_required {font-weight:bold;}
+
+.radioInputItem {margin:0.2em 0 0 0;}
+
+#main {margin:0 0 0 0;}
+
+#header {padding:0.8em 0 0.4em 0;background-color:#6E3667;color:#FFFFFF;}
+#header h3 {color:#FFFFFF;}
+.headerContent {padding:0 1em 0 1em;max-width:1120px;margin:0 auto;}
+.header_l {float:left;}
+.headerLogo {margin:-0.3em 2em 0 0;}
+.headerContent .activeMenuItem {color:#fff;font-weight:bold;}
+.header_p {float:right;}
+
+#footer {padding:0.5em 0 0.5em 0;background-color:#6E3667;}
+.footerContent {color:#FFFFFF;padding:0 1em 0 1em;max-width:1120px;margin:0 auto;}
+#header a, #footer a {color:#FFFFFF;}
+
+#content {text-align:left;padding:0.8em 0 1.0em 0;clear:both;}
+
+.container {margin:0 auto;padding:0em 1em 0em 1em;max-width:1120px;}
+.pageContent {padding:1em 0em 1em 0em;}
+
+.submenu_row {border-bottom:1px solid #ebf2f8;padding:0 0 1.0em 0;margin:0.4em 0 0.4em 0;}
+.submenu_item {padding:0 2.5em 0 0;float:left;}
+.submenu_item a.active {color:#808285;font-weight:bold;}
+
+.menu_item {padding:0 2.5em 0 0;float:left;}
+.menu_item a {font-weight:normal;text-decoration:none;color:#FFFFFF;}
+.menu_item a.active {color:#66CCFF;}
+.menu_item a:hover {font-weight:normal;text-decoration:none;color:#66CCFF;}
+
+#generalError {margin:2em;padding:2em;background-color:#FFAAAA;}
+#generalError a {color:#FFFFFF;}
+span.error {color:#FFFFFF;background-color:#FF0000;padding:0.2em;}
+div.error {border:2px solid #FF2222;}
+.notificationMessageInfo {background-color:#B8E479;color:#000000;text-align:left;font-weight:bold;display:block;padding:0.5em;}
+.notificationMessageError {background-color:#FF1D1D;color:#FFFFFF;text-align:center;font-weight:bold;display:block;padding:0.5em;}
+.notificationMessageInfo a, .notificationMessageError a {color:#000000;}
+p.errorMessage {color:#FF0000;font-weight:bold;margin:0;}
+p.errorMessage a {color:#FF0000;text-decoration:underline;font-weight:bold;}
+span.errorMessage {color:#FF0000;font-weight:bold;}
+.message p {color:#FF0000;font-weight:bold;font-size:1.5em;}
+
+.standardFormFieldRow {padding:0.3em 0.2em 0.3em 0.2em;}
+.standardFormFieldRowLabel {float:left;width:35%;}
+.standardFormFieldRowInput {float:right;width:65%;text-align:right;}
+.standardFormFieldRowInput input[type="text"] {width:90%;}
+.standardFormFieldRowInput select {width:93%;}
+.standardFormFieldRowInput select.small {width:6em;}
+.standardFormFieldRowInput input[type="password"] {width:90%;}
+.standardFormFieldRowInput textarea {width:92%;height:20em;}
+
+.shortFormFieldRow {padding:0.3em 0 0.3em 0;}
+.shortFormFieldRow .labelShort {width:6em;}
+.shortFormFieldRowLabel {float:left;padding-top:0.2em;}
+
+.longFormRow {padding:0.3em 0 0.3em 0;}
+.longFormRow .label {padding-top:0.4em;}
+.longFormRowElement {float:left;padding:0 0.5em 0.5em 0;}
+.longFormRowSeparator {float:left;width:1em;}
+
+
+.sendButton {background-color:#88d317;float:left;border:2px solid #222222;padding:0;margin-bottom:0.5em;border-radius:0.3em;}
+.sendButton a {font-weight:bold;color:#FFFFFF;display:block;margin:0.3em 0em 0.3em 0em;}
+.sendButton input[type="submit"] {font-weight:bold;color:#FFFFFF;display:block;border-width:0;padding:0.1em 2em 0.1em 2em;margin:0;background-color:transparent;cursor:pointer;}
+
+.fieldErrorBox {position:relative;}
+.fieldErrorBoxOut {position:absolute;top:-1em;background-color:#FF0000;color:#000000;font-size:0.8em;width:auto;}
+
+.itemsTable {width:100%;margin:0 0 1em 0;}
+.itemsTable td {padding:0.2em 0.5em 0.2em 0.5em;}
+.itemsTable td {border-style:solid;border-color:#808285;border-width:0 0 0.01em 0;}
+.itemsTable .titleWithGear {line-height:1.0em;}
+.itemsTable .gearName {font-size:0.7em;}
+.itemsTable .location {font-size:0.7em;}
+.itemsTable .photosCount {font-size:0.7em;cursor:help;}
+.itemsTable .noWeatherData {cursor:help;color:#AA0000;font-size:0.7em;font-weight:bold;}
+.itemsTable .noLocationData {cursor:help;color:#009900;font-size:0.7em;font-weight:bold;}
+.itemsTable td.activityWarnings {padding:0;}
+
+.statsTable {width:100%;margin:0 0 1em 0;}
+.statsTable td {padding:0.2em 0.2em 0.2em 0.2em;font-size:0.9em;position:relative;}
+.statsTable td.values {border-style:solid;border-color:#808285;border-width:0 0 0.01em 0;line-height:0.8em;vertical-align:top;white-space:nowrap;}
+.statsTable td.odd {background-color:#DDDDDD;}
+.statsTable .year {font-weight:bold;}
+.statsTable .time {font-size:0.7em;}
+.statsTable .totalTime {font-size:0.7em;font-weight:bold;}
+.statsTable .diaryIcon {right:0;top:0;position:absolute;}
+
+th.unit {font-style:italic;}
+
+.activityRow__RIDE                {background-color:#98A3CF;}
+.activityRow__RUN                 {background-color:#FF7676;}
+.activityRow__VIRTUAL_RIDE        {background-color:#FF8845;}
+.activityRow__NORDIC_SKI          {background-color:#EEEEEE;}
+.activityRow__WALK                {background-color:#FF8845;}
+.activityRow__SWIM                {background-color:#87CEEB;}
+.activityRow__ALPINE_SKI          {background-color:#FFFFFF;}
+.activityRow__BACKCOUNTRY_SKI     {background-color:#CCFFCC;}
+.activityRow__CANOEING            {background-color:#FF8845;}
+.activityRow__CROSSFIT            {background-color:#FF8845;}
+.activityRow__E_BIKE_RIDE         {background-color:#FF8845;}
+.activityRow__ELLIPTICAL          {background-color:#FF8845;}
+.activityRow__HIKE                {background-color:#FF8845;}
+.activityRow__ICE_SKATE           {background-color:#FF8845;}
+.activityRow__INLINE_SKATE        {background-color:#FF8845;}
+.activityRow__KAYAKING            {background-color:#FF8845;}
+.activityRow__KITESURF            {background-color:#FF8845;}
+.activityRow__ROCK_CLIMBING       {background-color:#FF8845;}
+.activityRow__ROLLER_SKI          {background-color:#FF8845;}
+.activityRow__ROWING              {background-color:#FF8845;}
+.activityRow__SNOWBOARD           {background-color:#FF8845;}
+.activityRow__SNOWSHOE            {background-color:#FF8845;}
+.activityRow__STAIR_STEPPER       {background-color:#FF8845;}
+.activityRow__STAND_UP_PADDLING   {background-color:#FF8845;}
+.activityRow__SURFING             {background-color:#FF8845;}
+.activityRow__VIRTUAL_RUN         {background-color:#FF8845;}
+.activityRow__WEIGHT_TRAINING     {background-color:#FF8845;}
+.activityRow__WINDSURF            {background-color:#FF8845;}
+.activityRow__WORKOUT             {background-color:#FF8845;}
+.activityRow__YOGA                {background-color:#FF8845;}
+.activityRow__OTHER               {background-color:#FF8845;}
+
+
+.activityHeader {margin:0 0 0.8em 0;}
+.activityActions {float:right;padding:0.1em 0.5em 0 0;}
+.activityActions img {margin-left:0.5em;}
+.activityValuesBox {float:left;width:48%;margin-bottom:0.2em;}
+.activityValueCell {float:left;width:7em;margin:0 0.5em 0 0;height:2.5em;}
+.activityValuesBox .big {width:14em;}
+.activityValuesBox .description {width:14em;height:auto;}
+.activityValueCellTitle {color:#888888;font-size:0.8em;padding:0;margin:0 0 -0.4em 0;}
+.activityValueCellValue {padding:0;margin:0;}
+.activityValueCellValue img {height:1.8em;vertical-align:top;}
+
+@media (max-width:1120px) {
+    .activityValuesBox {width:100%;}
+}
+
+.proviousNextActivity {clear:both;margin:0.5em 0 0.5em 0;}
+
+.activityPhotos {}
+
+.activityMap {height:30em;width:100%;border:1px solid #000000;margin:0em 0 1em 0;resize:both;overflow:auto;}
+@media (max-width:1120px) {
+    .activityMap {width:100%;}
+}
+
+#cumulativeStatsGraph {width:20em;}
+
+.photo {float:left;position:relative;margin:0.2em 0.2em 0 0;}
+.photo img {border:1px solid #000000;}
+.photo a {text-decoration:none;}
+.photo .photoRemove {position:absolute;top:0px;left:3px;color:#ff0000;font-size:1.2em;text-shadow:2px 2px 3px #000;font-weight:bold;}
+.photo .photoRating {position:absolute;bottom:0.5em;left:5px;}
+.photo .photoRating a {color:#ffee00;font-size:1.3em;text-shadow:2px 2px 4px #000;}
+.photo .photoRating a.inactive {color:#ffffff;}
+.photo .photoRating a:hover {color:#ffbb00;}
+.defaultPhoto img {border:1px solid #ffac05;}
+.smallPhoto {width:110px;}
+.smallPhoto img {width:100px;}
+.smallPhoto .photoRating a {font-size:0.8em;}
+.smallPhoto .photoRemove {position:absolute;top:0px;left:3px;color:#ff0000;font-size:0.8em;text-shadow:2px 2px 3px #000;font-weight:bold;}
+
+.diaryHeader {background-color:#EEEEEE;}
+.diaryMap {float:left;height:50em;width:100%;border:1px solid #000000;margin:0em 0 1em 0;resize:both;overflow:auto;}
+
+.diaryCalendar {float:left;width:50%;margin-bottom:0.2em;}
+.diaryCalendar p {margin:0;}
+.diaryCalendar .dateSelector {float:left;margin:0 1em 1em 0;}
+.diaryCalendar .dateSelector select {margin:0 .5em .5em 0;}
+.diaryCalendar table {float:left;min-width:25em;}
+.diaryCalendar td {background-color:#DDDDDD;border:0.01em solid #FFFFFF;position:relative;height:1.7em;}
+.diaryCalendar td .cellDayNumber {color:#555555;font-size:0.7em;position:absolute;left:0.2em;top:0;text-shadow:1px 1px 1px #fff;}
+.diaryCalendar td .cellActivity {float:left;padding:0 0.1em 0 0.1em;margin:0;vertical-align:middle;height:1.3em;}
+.diaryCalendar td .cellCurrentActivity {border:2px dotted #ffffff;}
+.diaryCalendar td .cellDiary {float:left;padding:0 0.1em 0 0.1em;margin:0;font-size:0.7em;}
+.diaryCalendar td.currentDay {background-color:#FFFFFF;}
+.diaryCalendar td.noMonthDay {background-color:#FFFFFF;}
+.diaryCalendar td.currentDay {color:#000000;font-weight:bold;}
+.diaryCalendar td.dayHeader {font-size:0.7em;}
+@media (max-width:1120px) {
+    .diaryCalendar {width:100%;}
+}
+
+.diaryItems {float:left;width:48%;margin:0 0 0.5em 0;}
+@media (max-width:1120px) {
+    .diaryItems {width:100%;}
+}
+
+a.cumulative_stats {border:1px dotted #6E3667;}
+a.cumulative_stats_active {border:1px solid #6E3667;}
+
+table.gear .primary {background-color:#99ff99;}
+
+.actionIcon {margin:0.1em;vertical-align:middle;}
+.oddRow {background-color:#DDD;}
+.currentValue {font-weight:bold;}
+.inactive {color:#808285;}
+.clear {clear:both;height:0;line-height:0;font-size:0}
+.hidden {display:none;}
+.center {text-align:center;}

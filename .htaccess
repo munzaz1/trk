@@ -1,0 +1,9 @@
+php_value short_open_tag 1
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !=/favicon.ico
+
+RewriteRule ^([^\?\.]+)$ index.php?url_id=$1 [L,QSA]

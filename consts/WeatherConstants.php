@@ -1,0 +1,235 @@
+<?
+
+class WeatherConstants {
+
+  // weather codes {{{
+  const WC_UNKNOWN                            = -1;
+  const WC_THUNDERSTORM_WITH_LIGHT_RAIN       = 1;
+  const WC_THUNDERSTORM_WITH_RAIN             = 2;
+  const WC_THUNDERSTORM_WITH_HEAVY_RAIN       = 3;
+  const WC_THUNDERSTORM_WITH_LIGHT_DRIZZLE    = 4;
+  const WC_THUNDERSTORM_WITH_DRIZZLE          = 5;
+  const WC_THUNDERSTORM_WITH_HEAVY_DRIZZLE    = 6;
+  const WC_THUNDERSTORM_WITH_HAIL             = 7;
+  const WC_LIGHT_DRIZZLE                      = 8;
+  const WC_DRIZZLE                            = 9;
+  const WC_HEAVY_DRIZZLE                      = 10;
+  const WC_LIGHT_RAIN                         = 11;
+  const WC_MODERATE_RAIN                      = 12;
+  const WC_HEAVY_RAIN                         = 13;
+  const WC_FREEZING_RAIN                      = 14;
+  const WC_LIGHT_SHOWER_RAIN                  = 15;
+  const WC_SHOWER_RAIN                        = 16;
+  const WC_HEAVY_SHOWER_RAIN                  = 17;
+  const WC_LIGHT_SNOW                         = 18;
+  const WC_SNOW                               = 19;
+  const WC_HEAVY_SNOW                         = 20;
+  const WC_MIX_SNOW_RAIN                      = 21;
+  const WC_SLEET                              = 22;
+  const WC_HEAVY_SLEET                        = 23;
+  const WC_SNOW_SHOWER                        = 24;
+  const WC_HEAVY_SNOW_SHOWER                  = 25;
+  const WC_FLURRIES                           = 26;
+  const WC_MIST                               = 27;
+  const WC_SMOKE                              = 28;
+  const WC_HAZE                               = 29;
+  const WC_SAND_DUST                          = 30;
+  const WC_FOG                                = 31;
+  const WC_FREEZING_FOG                       = 32;
+  const WC_CLEAR_SKY                          = 33;
+  const WC_FEW_CLOUDS                         = 34;
+  const WC_SCATTERED_CLOUDS                   = 35;
+  const WC_BROKEN_CLOUDS                      = 36;
+  const WC_OVERCAST_CLOUDS                    = 37;
+  const WC_UNKNOWN_PRECIPITATION              = 38;
+  const WC_THUNDERSTORM_WITH_LIGHT_SNOW       = 39;
+  const WC_THUNDERSTORM_WITH_SNOW             = 40;
+
+  public static $WEATHER_INTERNAL_NAMES       = array(
+    WeatherConstants::WC_UNKNOWN                         => 'UNKNOWN',
+    WeatherConstants::WC_THUNDERSTORM_WITH_LIGHT_RAIN    => 'THUNDERSTORM_WITH_LIGHT_RAIN',
+    WeatherConstants::WC_THUNDERSTORM_WITH_RAIN          => 'THUNDERSTORM_WITH_RAIN',
+    WeatherConstants::WC_THUNDERSTORM_WITH_HEAVY_RAIN    => 'THUNDERSTORM_WITH_HEAVY_RAIN',
+    WeatherConstants::WC_THUNDERSTORM_WITH_LIGHT_DRIZZLE => 'THUNDERSTORM_WITH_LIGHT_DRIZZLE',
+    WeatherConstants::WC_THUNDERSTORM_WITH_DRIZZLE       => 'THUNDERSTORM_WITH_DRIZZLE',
+    WeatherConstants::WC_THUNDERSTORM_WITH_HEAVY_DRIZZLE => 'THUNDERSTORM_WITH_HEAVY_DRIZZLE',
+    WeatherConstants::WC_THUNDERSTORM_WITH_HAIL          => 'THUNDERSTORM_WITH_HAIL',
+    WeatherConstants::WC_LIGHT_DRIZZLE                   => 'LIGHT_DRIZZLE',
+    WeatherConstants::WC_DRIZZLE                         => 'DRIZZLE',
+    WeatherConstants::WC_HEAVY_DRIZZLE                   => 'HEAVY_DRIZZLE',
+    WeatherConstants::WC_LIGHT_RAIN                      => 'LIGHT_RAIN',
+    WeatherConstants::WC_MODERATE_RAIN                   => 'MODERATE_RAIN',
+    WeatherConstants::WC_HEAVY_RAIN                      => 'HEAVY_RAIN',
+    WeatherConstants::WC_FREEZING_RAIN                   => 'FREEZING_RAIN',
+    WeatherConstants::WC_LIGHT_SHOWER_RAIN               => 'LIGHT_SHOWER_RAIN',
+    WeatherConstants::WC_SHOWER_RAIN                     => 'SHOWER_RAIN',
+    WeatherConstants::WC_HEAVY_SHOWER_RAIN               => 'HEAVY_SHOWER_RAIN',
+    WeatherConstants::WC_LIGHT_SNOW                      => 'LIGHT_SNOW',
+    WeatherConstants::WC_SNOW                            => 'SNOW',
+    WeatherConstants::WC_HEAVY_SNOW                      => 'HEAVY_SNOW',
+    WeatherConstants::WC_MIX_SNOW_RAIN                   => 'MIX_SNOW_RAIN',
+    WeatherConstants::WC_SLEET                           => 'SLEET',
+    WeatherConstants::WC_HEAVY_SLEET                     => 'HEAVY_SLEET',
+    WeatherConstants::WC_SNOW_SHOWER                     => 'SNOW_SHOWER',
+    WeatherConstants::WC_HEAVY_SNOW_SHOWER               => 'HEAVY_SNOW_SHOWER',
+    WeatherConstants::WC_FLURRIES                        => 'FLURRIES',
+    WeatherConstants::WC_MIST                            => 'MIST',
+    WeatherConstants::WC_SMOKE                           => 'SMOKE',
+    WeatherConstants::WC_HAZE                            => 'HAZE',
+    WeatherConstants::WC_SAND_DUST                       => 'SAND_DUST',
+    WeatherConstants::WC_FOG                             => 'FOG',
+    WeatherConstants::WC_FREEZING_FOG                    => 'FREEZING_FOG',
+    WeatherConstants::WC_CLEAR_SKY                       => 'CLEAR_SKY',
+    WeatherConstants::WC_FEW_CLOUDS                      => 'FEW_CLOUDS',
+    WeatherConstants::WC_SCATTERED_CLOUDS                => 'SCATTERED_CLOUDS',
+    WeatherConstants::WC_BROKEN_CLOUDS                   => 'BROKEN_CLOUDS',
+    WeatherConstants::WC_OVERCAST_CLOUDS                 => 'OVERCAST_CLOUDS',
+    WeatherConstants::WC_UNKNOWN_PRECIPITATION           => 'UNKNOWN_PRECIPITATION',
+    WeatherConstants::WC_THUNDERSTORM_WITH_LIGHT_SNOW    => 'THUNDERSTORM_WITH_LIGHT_SNOW',
+    WeatherConstants::WC_THUNDERSTORM_WITH_SNOW          => 'THUNDERSTORM_WITH_SNOW',
+  );
+
+
+  public static $WEATHER_CODE_BY_WEATHERBIT_IO_CODE = array(
+    200 => WeatherConstants::WC_THUNDERSTORM_WITH_LIGHT_RAIN,
+    201 => WeatherConstants::WC_THUNDERSTORM_WITH_RAIN,
+    202 => WeatherConstants::WC_THUNDERSTORM_WITH_HEAVY_RAIN,
+    230 => WeatherConstants::WC_THUNDERSTORM_WITH_LIGHT_DRIZZLE,
+    231 => WeatherConstants::WC_THUNDERSTORM_WITH_DRIZZLE,
+    232 => WeatherConstants::WC_THUNDERSTORM_WITH_HEAVY_DRIZZLE,
+    233 => WeatherConstants::WC_THUNDERSTORM_WITH_HAIL,
+    300 => WeatherConstants::WC_LIGHT_DRIZZLE,
+    301 => WeatherConstants::WC_DRIZZLE,
+    302 => WeatherConstants::WC_HEAVY_DRIZZLE,
+    500 => WeatherConstants::WC_LIGHT_RAIN,
+    501 => WeatherConstants::WC_MODERATE_RAIN,
+    502 => WeatherConstants::WC_HEAVY_RAIN,
+    511 => WeatherConstants::WC_FREEZING_RAIN,
+    520 => WeatherConstants::WC_LIGHT_SHOWER_RAIN,
+    521 => WeatherConstants::WC_SHOWER_RAIN,
+    522 => WeatherConstants::WC_HEAVY_SHOWER_RAIN,
+    600 => WeatherConstants::WC_LIGHT_SNOW,
+    601 => WeatherConstants::WC_SNOW,
+    602 => WeatherConstants::WC_HEAVY_SNOW,
+    610 => WeatherConstants::WC_MIX_SNOW_RAIN,
+    611 => WeatherConstants::WC_SLEET,
+    612 => WeatherConstants::WC_HEAVY_SLEET,
+    621 => WeatherConstants::WC_SNOW_SHOWER,
+    622 => WeatherConstants::WC_HEAVY_SNOW_SHOWER,
+    623 => WeatherConstants::WC_FLURRIES,
+    700 => WeatherConstants::WC_MIST,
+    711 => WeatherConstants::WC_SMOKE,
+    721 => WeatherConstants::WC_HAZE,
+    731 => WeatherConstants::WC_SAND_DUST,
+    741 => WeatherConstants::WC_FOG,
+    751 => WeatherConstants::WC_FREEZING_FOG,
+    800 => WeatherConstants::WC_CLEAR_SKY,
+    801 => WeatherConstants::WC_FEW_CLOUDS,
+    802 => WeatherConstants::WC_SCATTERED_CLOUDS,
+    803 => WeatherConstants::WC_BROKEN_CLOUDS,
+    804 => WeatherConstants::WC_OVERCAST_CLOUDS,
+    900 => WeatherConstants::WC_UNKNOWN_PRECIPITATION,
+  );
+
+
+  public static $WEATHER_CODE_BY_APIXU_CODE = array(
+    1000 => WeatherConstants::WC_CLEAR_SKY,                       // SUNNY
+    1003 => WeatherConstants::WC_SCATTERED_CLOUDS,                // PARTLY CLOUDY
+    1006 => WeatherConstants::WC_OVERCAST_CLOUDS,                 // CLOUDY
+    1009 => WeatherConstants::WC_OVERCAST_CLOUDS,                 // OVERCAST
+    1030 => WeatherConstants::WC_MIST,                            // MIST
+    1063 => WeatherConstants::WC_SHOWER_RAIN,                     // PATCHY RAIN POSSIBLE
+    1066 => WeatherConstants::WC_SNOW_SHOWER,                     // PATCHY SNOW POSSIBLE
+    1069 => WeatherConstants::WC_SHOWER_RAIN,                     // PATCHY SLEET POSSIBLE
+    1072 => WeatherConstants::WC_SHOWER_RAIN,                     // PATCHY FREEZING DRIZZLE POSSIBLE
+    1087 => WeatherConstants::WC_THUNDERSTORM_WITH_HAIL,          // THUNDERY OUTBREAKS POSSIBLE
+    1114 => WeatherConstants::WC_SNOW,                            // BLOWING SNOW
+    1117 => WeatherConstants::WC_THUNDERSTORM_WITH_HEAVY_RAIN,    // BLIZZARD
+    1135 => WeatherConstants::WC_FOG,                             // FOG
+    1147 => WeatherConstants::WC_FREEZING_FOG,                    // FREEZING FOG
+    1150 => WeatherConstants::WC_LIGHT_DRIZZLE,                   // PATCHY LIGHT DRIZZLE
+    1153 => WeatherConstants::WC_LIGHT_DRIZZLE,                   // LIGHT DRIZZLE
+    1168 => WeatherConstants::WC_DRIZZLE,                         // FREEZING DRIZZLE
+    1171 => WeatherConstants::WC_HEAVY_DRIZZLE,                   // HEAVY FREEZING DRIZZLE
+    1180 => WeatherConstants::WC_LIGHT_RAIN,                      // PATCHY LIGHT RAIN
+    1183 => WeatherConstants::WC_LIGHT_RAIN,                      // LIGHT RAIN
+    1186 => WeatherConstants::WC_MODERATE_RAIN,                   // MODERATE RAIN AT TIMES
+    1189 => WeatherConstants::WC_MODERATE_RAIN,                   // MODERATE RAIN
+    1192 => WeatherConstants::WC_HEAVY_RAIN,                      // HEAVY RAIN AT TIMES
+    1195 => WeatherConstants::WC_HEAVY_RAIN,                      // HEAVY RAIN
+    1198 => WeatherConstants::WC_FREEZING_RAIN,                   // LIGHT FREEZING RAIN
+    1201 => WeatherConstants::WC_FREEZING_RAIN,                   // MODERATE OR HEAVY FREEZING RAIN
+    1204 => WeatherConstants::WC_SLEET,                           // LIGHT SLEET
+    1207 => WeatherConstants::WC_HEAVY_SLEET,                     // MODERATE OR HEAVY SLEET
+    1210 => WeatherConstants::WC_LIGHT_SNOW,                      // PATCHY LIGHT SNOW
+    1213 => WeatherConstants::WC_LIGHT_SNOW,                      // LIGHT SNOW
+    1216 => WeatherConstants::WC_SNOW,                            // PATCHY MODERATE SNOW
+    1219 => WeatherConstants::WC_SNOW,                            // MODERATE SNOW
+    1222 => WeatherConstants::WC_HEAVY_SNOW,                      // PATCHY HEAVY SNOW
+    1225 => WeatherConstants::WC_HEAVY_SNOW,                      // HEAVY SNOW
+    1237 => WeatherConstants::WC_SLEET,                           // ICE PELLETS
+    1240 => WeatherConstants::WC_LIGHT_SHOWER_RAIN,               // LIGHT RAIN SHOWER
+    1243 => WeatherConstants::WC_SHOWER_RAIN,                     // MODERATE OR HEAVY RAIN SHOWER
+    1246 => WeatherConstants::WC_SHOWER_RAIN,                     // TORRENTIAL RAIN SHOWER
+    1249 => WeatherConstants::WC_SLEET,                           // LIGHT SLEET SHOWERS
+    1252 => WeatherConstants::WC_HEAVY_SLEET,                     // MODERATE OR HEAVY SLEET SHOWERS
+    1255 => WeatherConstants::WC_SNOW_SHOWER,                     // LIGHT SNOW SHOWERS
+    1258 => WeatherConstants::WC_HEAVY_SNOW_SHOWER,               // MODERATE OR HEAVY SNOW SHOWERS
+    1261 => WeatherConstants::WC_SLEET,                           // LIGHT SHOWERS OF ICE PELLETS
+    1264 => WeatherConstants::WC_HEAVY_SLEET,                     // MODERATE OR HEAVY SHOWERS OF ICE PELLETS
+    1273 => WeatherConstants::WC_THUNDERSTORM_WITH_LIGHT_RAIN,    // PATCHY LIGHT RAIN WITH THUNDER
+    1276 => WeatherConstants::WC_THUNDERSTORM_WITH_RAIN,          // MODERATE OR HEAVY RAIN WITH THUNDER
+    1279 => WeatherConstants::WC_THUNDERSTORM_WITH_LIGHT_SNOW,    // PATCHY LIGHT SNOW WITH THUNDER
+    1282 => WeatherConstants::WC_THUNDERSTORM_WITH_SNOW,          // MODERATE OR HEAVY SNOW WITH THUNDER
+  );
+
+
+  public static $WEATHER_ICON_BY_CODE        = array(
+    WeatherConstants::WC_UNKNOWN                         => 'unknown',
+    WeatherConstants::WC_THUNDERSTORM_WITH_LIGHT_RAIN    => 't01',
+    WeatherConstants::WC_THUNDERSTORM_WITH_RAIN          => 't02',
+    WeatherConstants::WC_THUNDERSTORM_WITH_HEAVY_RAIN    => 't03',
+    WeatherConstants::WC_THUNDERSTORM_WITH_LIGHT_DRIZZLE => 't04',
+    WeatherConstants::WC_THUNDERSTORM_WITH_DRIZZLE       => 't04',
+    WeatherConstants::WC_THUNDERSTORM_WITH_HEAVY_DRIZZLE => 't04',
+    WeatherConstants::WC_THUNDERSTORM_WITH_HAIL          => 't05',
+    WeatherConstants::WC_LIGHT_DRIZZLE                   => 'd01',
+    WeatherConstants::WC_DRIZZLE                         => 'd02',
+    WeatherConstants::WC_HEAVY_DRIZZLE                   => 'd03',
+    WeatherConstants::WC_LIGHT_RAIN                      => 'r01',
+    WeatherConstants::WC_MODERATE_RAIN                   => 'r02',
+    WeatherConstants::WC_HEAVY_RAIN                      => 'r03',
+    WeatherConstants::WC_FREEZING_RAIN                   => 'f01',
+    WeatherConstants::WC_LIGHT_SHOWER_RAIN               => 'r04',
+    WeatherConstants::WC_SHOWER_RAIN                     => 'r05',
+    WeatherConstants::WC_HEAVY_SHOWER_RAIN               => 'r06',
+    WeatherConstants::WC_LIGHT_SNOW                      => 's01',
+    WeatherConstants::WC_SNOW                            => 's02',
+    WeatherConstants::WC_HEAVY_SNOW                      => 's03',
+    WeatherConstants::WC_MIX_SNOW_RAIN                   => 's04',
+    WeatherConstants::WC_SLEET                           => 's05',
+    WeatherConstants::WC_HEAVY_SLEET                     => 's05',
+    WeatherConstants::WC_SNOW_SHOWER                     => 's01',
+    WeatherConstants::WC_HEAVY_SNOW_SHOWER               => 's02',
+    WeatherConstants::WC_FLURRIES                        => 's06',
+    WeatherConstants::WC_MIST                            => 'a01',
+    WeatherConstants::WC_SMOKE                           => 'a02',
+    WeatherConstants::WC_HAZE                            => 'a03',
+    WeatherConstants::WC_SAND_DUST                       => 'a04',
+    WeatherConstants::WC_FOG                             => 'a05',
+    WeatherConstants::WC_FREEZING_FOG                    => 'a06',
+    WeatherConstants::WC_CLEAR_SKY                       => 'c01',
+    WeatherConstants::WC_FEW_CLOUDS                      => 'c02',
+    WeatherConstants::WC_SCATTERED_CLOUDS                => 'c02',
+    WeatherConstants::WC_BROKEN_CLOUDS                   => 'c03',
+    WeatherConstants::WC_OVERCAST_CLOUDS                 => 'c04',
+    WeatherConstants::WC_UNKNOWN_PRECIPITATION           => 'u00',
+    WeatherConstants::WC_THUNDERSTORM_WITH_LIGHT_SNOW    => 't06',
+    WeatherConstants::WC_THUNDERSTORM_WITH_SNOW          => 't06',
+  );
+
+  // }}}
+
+}
+
+?>
